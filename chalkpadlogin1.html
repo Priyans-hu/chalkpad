@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chalkpad: Login 1</title>
+
+    <!-- fontawesome linkage -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- google fonts linking -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <style>
+        body {
+            background-image: url(bg1.jpg);
+            /* background-image: url(https://www.teahub.io/photos/full/320-3202133_wallpaper-of-earth-mountain-sunset-sky-background-dolomites.jpg); */
+            background-size: 100%;
+            background-repeat: no-repeat;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        body header a {
+            /* position: fixed; */
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        body header a img {
+            padding: 1%;
+            width: 200px;
+        }
+        
+        body .maindiv .rightside .logheading {
+            color: white;
+            font-family: monospace;
+            font-size: 3em;
+        }
+        
+        body .maindiv .rightside table {
+            margin-left: 5%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        body .maindiv .rightside table tr {
+            border: transparent 15px solid;
+        }
+        
+        body .maindiv .rightside table tr p {
+            margin: 0;
+            display: inline;
+            font-size: large;
+            font-weight: bold;
+        }
+        
+        body .maindiv .rightside table input {
+            outline: none;
+            border: none;
+            width: 95%;
+            border-bottom: rgba(255, 255, 255, 0.514) 2px solid;
+            font-size: large;
+            background-color: transparent;
+            padding: 5px;
+            margin: 15px;
+        }
+        
+        body .maindiv .rightside table select {
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+            border: none;
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.514);
+        }
+        
+        body .maindiv .rightside table a {
+            text-decoration: none;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: small;
+            float: right;
+            font-weight: bolder;
+        }
+        
+        body .maindiv .rightside button {
+            width: 50%;
+            padding: 2%;
+            border: none;
+            margin: 3%;
+            color: white;
+            font-size: x-large;
+            background-color: transparent;
+        }
+        
+        body .maindiv .rightside button span {
+            display: none;
+        }
+        
+        body .maindiv .rightside button:hover {
+            cursor: pointer;
+            border-bottom: red 3px solid;
+            color: red;
+            transition: ease-out 0.5s;
+        }
+        
+        body .maindiv .rightside button:hover span {
+            display: inherit;
+            animation: ease-in-out 1s;
+            transition: ease-in-out 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="https://www.chitkara.edu.in/">
+            <img src="culogo.png" alt="Chitkara University Logo">
+        </a>
+    </header>
+    <main>
+        <div class="maindiv">
+            <!-- basic info side -->
+            <!-- <div class="leftside">
+                <h3>Chitkara University bags A+ NAAC accreditation</h3>
+                <img src="https://www.chitkara.edu.in/wp-content/uploads/2021/09/Chitkara-University-bags-A-NAAC-accreditation-smal.jpg" alt="">
+            </div> -->
+
+            <!-- login form side -->
+            <div class="rightside">
+                <h1 class="logheading">LOG IN</h1>
+                <table>
+                    <form action="">
+                        <tr>
+                            <td>
+                                <i class="fa fa-user-circle" aria-hidden="true">
+                                    &emsp; &emsp;USERNAME:
+                                </i>
+                            </td>
+                            <td>
+                                <input type="text" placeholder="Enter Your University Roll number">
+                            </td>
+                        </tr>
+                        <!-- passowrd input -->
+                        <tr>
+                            <td>
+                                <i class="fas fa-key">
+                                    &emsp; &emsp;  PASSWORD:
+                                </i>
+                            </td>
+                            <td>
+                                <input type="password" name="" id="" placeholder="Password">
+                            </td>
+                        </tr>
+                        <!-- select menu  -->
+                        <tr>
+                            <!-- institute type input selection -->
+                            <td>
+                                <p>
+                                    Institute:
+                                </p>
+                                <select name="" id="">
+                                    <option value="" selected="selected">Select</option>
+                                    <option value="">CCSM</option>
+                                    <option value="">CBS(PB)</option>
+                                    <option value="">CSH</option>
+                                    <option value="">CCE</option>
+                                    <option value="">CSAD</option>
+                                    <option value="">CSCA</option>
+                                    <option value="">CIET</option>
+                                    <option value="">CCN</option>
+                                    <option value="">CSPAU</option>
+                                    <option value="">CSMCU</option>
+                                    <option value="">CUIET</option>
+                                    <option value="">CSPA</option>
+                                    <option value="">CSHTM</option>
+                                    <option value="">CCAE</option>
+                                    <option value="">CCPU</option>
+                                    <option value="">CSHSU</option>
+                                    <option value="">CCHM</option>
+                                    <option value="">SBFS</option>
+                                    <option value="">CBS</option>
+                                    <option value="">CCEW</option>
+                                    <option value="">CSM</option>
+                                    <option value="">CCSRM</option>
+                                    <option value="">CGBC</option>
+                                    <option value="">CUP</option>
+                                    <option value="">PHD</option>
+                                    <option value="">CCP</option>                                
+                                </select>
+                            </td>
+                            <!-- session/year select list -->
+                            <td>
+                                <p>
+                                    Session:
+                                </p>
+                                <select name="" id="">
+                                    <option value="2022 - 23">2022 - 23</option>
+                                    <option value="2021 - 22" selected>2021 - 22</option>
+                                    <option value="2020 - 21">2020 - 21</option>
+                                    <option value="2019 - 20">2019 - 20</option>
+                                    <option value="2018 - 19">2018 - 19</option>
+                                    <option value="2017 - 18">2017 - 18</option>
+                                    <option value="2016 - 17">2016 - 17</option>
+                                    <option value="2015 - 16">2015 - 16</option>
+                                    <option value="2014 - 15">2014 - 15</option>
+                                    <option value="2013 - 14">2013 - 14</option>
+                                    <option value="2012 - 13">2012 - 13</option>
+                                    <option value="2011 - 12">2011 - 12</option>
+                                    <option value="2010 - 11">2010 - 11</option>
+                                    <option value="2009 - 10">2009 - 10</option>
+                                    <option value="2008 - 09">2008 - 09</option>
+                                    <option value="2007 - 09">2007 - 08</option>
+                                    <option value="2006 - 07">2006 - 07</option>
+                                    <option value="2005 - 06">2005 - 06</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <!-- <button type="submit">LOGIN <span>&emsp;&emsp;<i class="fas fa-angle-double-right"></i></span></button> -->
+                                <button type="submit">LOGIN <span>&emsp;&emsp;<i class="fas fa-arrow-right"></i></span></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <a href="#">FORGOT PASSWORD</a>
+                            </td>
+                        </tr>
+                    </form>
+                </table>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
